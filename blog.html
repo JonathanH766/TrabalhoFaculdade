@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados com os Animais - ONG Das Patinhas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/logo factoring.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header> 
+        <a href="index.html" aria-label="Voltar para a página inicial">
+            <img src="img/logo.png" alt="Logo da ONG Das Patinhas" width="300" height="80">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="quemSomos.html">Quem somos</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="adocao.html">Adoção</a>
+            <a href="blog.html">Blog</a>
+
+        </nav>
+    </header>
+    
+    <main>
+        <section id="cuidados">
+            <h1>Cuidados com os Animais</h1>
+            <p class="paragrafo">Proporcionar cuidados adequados aos seus animais de estimação é essencial para garantir a saúde e felicidade deles. Abaixo estão algumas dicas de cuidados para cães, gatos e outros pets.</p>
+
+            <div class="accordion">
+                <article>
+                    <h2 class="accordion-header">Cuidados com Cães</h2>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Alimentação:</strong> Ração de qualidade apropriada para a idade e porte. Evite alimentos tóxicos, como chocolate e cebola.</li>
+                            <li><strong>Exercício:</strong> Atividades físicas diárias são essenciais para a saúde física e mental.</li>
+                            <li><strong>Higiene:</strong> Banhos, cuidados com as unhas e escovação dos dentes são fundamentais.</li>
+                            <li><strong>Vacinação:</strong> Mantenha as vacinas em dia para prevenir doenças.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="accordion-header">Cuidados com Gatos</h2>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Alimentação:</strong> Ração específica e balanceada; evite leite, pois muitos gatos são intolerantes à lactose.</li>
+                            <li><strong>Caixa de Areia:</strong> Mantenha sempre limpa para atender às necessidades dos gatos.</li>
+                            <li><strong>Enriquecimento Ambiental:</strong> Ofereça brinquedos e arranhadores para manter a atividade.</li>
+                            <li><strong>Vacinas e Vermifugação:</strong> Mantenha a vacinação e vermifugação em dia.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="accordion-header">Cuidados com Outros Pets</h2>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Pássaros:</strong> Gaiola limpa e dieta variada com sementes, frutas e verduras seguras.</li>
+                            <li><strong>Roedores:</strong> Gaiolas limpas e alimentos adequados são essenciais.</li>
+                            <li><strong>Peixes:</strong> Troque a água regularmente e monitore o pH e a temperatura do aquário.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo da ONG Das Patinhas">
+            <p>Cuidando com amor, vivendo com alegria: ONG Das Patinhas, onde a vida dos pets é mais feliz!</p>
+        </div>
+        <div>
+            <strong class="titulo">Links rápidos</strong>
+            <a href="index.html">Início</a>
+            <a href="quemSomos.html">Quem somos</a>
+            <a href="ajuda.html">Ajuda</a>
+            <a href="adocao.html">Adoção</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Encontre-nos</h3>
+            <p>WhatsApp: <a href="">(97) 98417-3223</a></p>
+            <p>Email: <a href="mailto:contato@daspatinhas.org.br">contato@daspatinhas.org.br</a></p>
+            <p>Endereço: Av. 7 de Setembro, nº 42, Centro</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
+    
