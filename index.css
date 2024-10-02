@@ -511,3 +511,58 @@ footer p a {
     opacity: 1;
     padding: 24px;
 }
+/* Adapta o layout para telas menores que 768px (como smartphones) */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 200px; /* Ajusta o tamanho do logo */
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #inicio img {
+        width: 100%;
+        height: auto;
+    }
+
+    .botao, .botao-transparente {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #clinica img, #duvidas img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+}
